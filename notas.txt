@@ -1,0 +1,9 @@
+git init 
+git add archivo
+git commit -m "mensaje para el log"
+git checkout codigoDeProyecto
+git branch nombredelarama
+git add . --esto guarda todos los archivos del codigoDeProyecto
+git merge nombredelaramaquequieroFusionar
+git log
+q --para salir del log
