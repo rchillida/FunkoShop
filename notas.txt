@@ -7,3 +7,15 @@ git add . --esto guarda todos los archivos del codigoDeProyecto
 git merge nombredelaramaquequieroFusionar
 git log
 q --para salir del log
+
+
+cmd K + cmd F Toma una seleccion de etiquetas y las acomoda con la identacion correspondiente
+
+opt z   te permite ver una linea de texto larga sin tener que scrollear...
+
+ctr + tab me permite moverme entre distintas paginas como en un navegador
+
+cmdK + cmdC para cambiar una etiqueta y transformarla en comentario
+
+
+
