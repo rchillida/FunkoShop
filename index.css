@@ -160,7 +160,7 @@ header {
 
 .hero {
     background-image: url(./image/funkos-banner.webp);
-    padding: var(--spacing-128);
+    padding: var(--spacing-128) 0;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -213,6 +213,59 @@ header {
     background-color: var(--primary-solid);
     color: var(--light-font-solid);
 }
+
+
+/*  COLECTIONS  */
+
+.collection {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.collection:nth-child(2) .collection__cover {
+    order: -1;
+}
+
+.collection__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24);
+    align-items: start;
+}
+
+.collection__title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 500;
+}
+
+.collection__text {
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+    border-bottom: 2px solid red;
+    padding-bottom: var(--spacing-20);
+}
+
+.collection__link {
+    display: inline-block;
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-weight: 500;
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-16) var(--spacing-36);
+    border-radius: 50px;
+    transition: background .3s ease-in-out;
+}
+
+.collection__link:hover {
+    background-color: var(--primary-solid);
+
+}
+
+
 
 
 
