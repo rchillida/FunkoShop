@@ -582,6 +582,9 @@ select {
     text-align: center;
 }
 
+
+/* ADMIN PAGE */
+
 .admin__search {
     display: flex;
     align-items: center;
@@ -671,7 +674,28 @@ tr th td {
     font-size: var(--font-medium);
 }
 
+/* CREATE PAGE */
 
+#product_description {
+    resize: none;
+}
+
+.create__title {
+    font-family: var(--base-font);
+    text-transform: uppercase;
+    font-size: var(--font-jumbo);
+    margin-top: var(--spacing-36);
+}
+
+.create__content {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    padding: var(--spacing-36);
+}
+
+.create__select {
+    padding: var(--spacing-36);
+}
 
 
 /* ANIMATIONS */
