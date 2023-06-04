@@ -20,4 +20,9 @@ ctr + tab /* me permite moverme entre distintas paginas como en un navegador */
 
 cmdK + cmdC /* para cambiar una etiqueta y transformarla en comentario*/
 
+Tab         mueve para la derecha la tabulacion del codigo
+Tab+Shift   mueve para la izquierda la tabulacion del codigo
+
+
+
 
