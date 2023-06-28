@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../index.css">
+    <title>FunkoShop edit</title>
+</head>
+<body>
+    <header>  <!--Inicio de header-->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../../image/branding/logo_light_horizontal.svg" alt="Logo de la marca FunkoShop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="../../pages/shop/shop.html">SHOP <iconify-icon icon="majesticons:chevron-down"></iconify-icon></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funko</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../pages/shop/contacto.html">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../pages/admin/login.html>Login">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="../../pages/shop/cart.html">
+                    <img src="../../image/icons/cart-icon.svg" alt="icono de carrito"></a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!--Fin de header-->
+    <main class="container">
+        <h1 class="table__title">Editar item</h1>
+        <section class="container" >
+            <label for="category">Categoría</label>
+            <select name="category" id="category">
+                <option value="Figuras">Figuras</option>
+                <option value="Coleccionables">Coleccionables</option>
+                <option value="Memorabilia">Memorabilia</option>
+            </select>
+            <label for="Licence">Licencia</label>
+            <select name="Licence" id="" placeholder="Seleccionar">
+                <option value="Naruto">Naruto Shippuden</option>
+                <option value="StarWars">StarWars</option>
+                <option value="Pokemon">Pokemon</option>
+            </select>
+            <label for="product__name">Nombre del producto</label>
+            <input type="text" id="product_name" name="product_name" placeholder="Kakashi Hatake Shippuden Saga">
+            <textarea class="create__textarea" name="product_description" id="product_description" cols="80" rows="8" placeholder="Descripción del producto"></textarea>
+            <label for="sku">SKU</label>
+            <input type="text" id="sku" name="sku" placeholder="SSK111AB001">
+            <label for="price">Precio</label>
+            <input type="text" id="price" name="price" placeholder="$ 0.000,00">
+            <label for="stock">Stock</label>
+            <input type="text" id="stock" name="stock" placeholder="0">
+            <label for="discount">Descuento</label>
+            <input type="text" id="discount" name="discount" placeholder="0%">
+            <label for="promo">Cuotas</label>
+            <select name="promo" id="promo" placeholder="3 cuotas sin interés">
+                <option value="3cuotas" selected>3 cuotas sin interés</option>
+                <option value="1cuotas">1 pago</option>
+                <option value="12cuotas">12 cuotas</option>
+                <option value="18cuotas">18 cuotas</option>
+            </select>
+            <label for="file_image">Imágenes</label>
+            <input type="file" id="file_image" name="file_image">
+
+        </section>
+    </main>
+    <footer class="footer">  <!--Inicio Footer-->
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../pages/shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../pages/admin/register.html">REGISTRARSE</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="../../pages/admin/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../pages/shop/contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../../image/branding/isotype.svg" alt="Isotipo de la marca FunkoShop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop&copy</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+</body>
+</html>
