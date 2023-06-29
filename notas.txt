@@ -25,7 +25,7 @@ Tab+Shift   mueve para la izquierda la tabulacion del codigo
 
 cmd+K Clears terminal
 
-ctrl+C Cierra el servidor activo de node 
+ctrl+C Cierra el servidor activo de node
 
 
 
