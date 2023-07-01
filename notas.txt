@@ -1,15 +1,35 @@
+/// GIT 
+
 git init 
 git add archivo
 git commit -m "mensaje para el log"
 git commit -am "mensaje para el log" <!-- esto combina add y commit en una sola operacion -->
 git checkout new_branch <!--to switch to that branch-->
-git branch nombredelarama
-git add . <!--esto guarda todos los archivos del codigoDeProyecto -->
+
+Crear una nueva branch
+git branch new_branch
+
+Guarda todos los archivos del proyecto
+git add .
+
+
 git merge nombredelaramaquequieroFusionar
+
 git log
+
 git diff branch1 branch2 <!--muestra diferencias entre ambos branches-->
-q <!--para salir del log-->
-git branch <!--te lista las ramas-branches existentes-->
+
+Sair del log
+q
+
+Lista de branches existentes
+git branch
+
+Modificar nombre de una branch
+git branch -m nombre-antiguo nombre-nuevo
+
+
+/// HotKeys de VSC
 
 
 cmd K + cmd F /*Toma una seleccion de etiquetas y las acomoda con la identacion correspondiente */
@@ -26,6 +46,16 @@ Tab+Shift   mueve para la izquierda la tabulacion del codigo
 cmd+K Clears terminal
 
 ctrl+C Cierra el servidor activo de node
+
+Para instalar npm install
+En la terminal para instalar express... npm i express -g // el flag -g significa que se va a instalar en forma global en toda la computadora...  1 solo flag debe aparecer la orden abreviada (-g) si no, tengo que usar 2 --global
+
+Si quiero instalar la ultima dependencia (sin mirar la que tengo instalada en el proyecto actual)  npm install express@latest
+
+Express generator, te arma un proyecto de express con sus carpets y dependencias  npm express-generator -g
+luego en la carpeta que vamos a generar el proyecto ponemos express nombre-del-proyecto
+
+NodeMon sirve p
 
 
 
