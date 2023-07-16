@@ -39,30 +39,27 @@
     align-items: center;
 }
 
-.item__minus {
-    display: inline-block;
-    background-color: var(--dark-bg-solid);
-    color: var(--light-font-solid);
-    padding: var(--spacing-24);
-}
-
-#cantidad.item__quantity {
+#quantity .item__input {
     font-family: var(--base-font);
-    font-size: var(--font-jumbo);
+    font-size: var(--font-large);
     color: var(--lightgrey-bg-solid);
     border: 1px solid var(--dark-bg-solid);
-    padding: var(--spacing-12) var(--spacing-24);
+    padding: var(--spacing-16);
     margin: var(--spacing-12);
     border-radius: 2px;
-    width: 15%;
+    max-width: 70px;
     text-align: center;
+
+
 }
 
-.item__plus {
-    display: inline-block;
+.item__quantity {
     background-color: var(--dark-bg-solid);
     color: var(--light-font-solid);
-    padding: var(--spacing-24);
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    border: none;
+    cursor: pointer;
 }
 
 .item__link {

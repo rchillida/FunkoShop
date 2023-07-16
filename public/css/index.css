@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css");
 
 /* Misc */
 
@@ -6,6 +8,19 @@
 @import url('../css/misc/variables.css');
 @import url('../css/misc/helpers.css');
 @import url('../css/misc/animations.css');
+
+/* Partials */
+
+@import url('../css/partials/header.css');
+@import url('../css/partials/footer.css');
+
+
+/* Components */
+
+@import url('../css/components/buttons.css');
+@import url('../css/components/card.css');
+@import url('../css/components/form.css');
+@import url('../css/components/slider.css');
 
 /* Pages */
 
@@ -19,36 +34,12 @@
 @import url('../css/pages/shop.css');
 
 
-/* Partials */
-
-@import url('../css/partials/header.css');
-@import url('../css/partials/footer.css');
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* SLIDER */
-
-.slider {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-36);
-    margin: var(--spacing-68) auto;
-}
-
-.slider__title {
-    font-family: var(--alternative-font);
-    font-size: var(--font-display);
-    text-transform: uppercase;
-    gap: var(--spacing-24);
-}
-
-.slider__items {
-    display: flex;
-
-}
 
 .card-item__cover {
     display: flex;

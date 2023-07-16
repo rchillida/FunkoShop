@@ -18,3 +18,20 @@
     display: flex;
 
 };
+
+iconify-icon {
+    color:  var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+
+
+.glide__arrow--left {
+    color: var(--dark-bg-solid);
+    left: 0;
+}
+
+.glide__arrow--right {
+    color: var(--dark-bg-solid);
+    right: 0;
+}

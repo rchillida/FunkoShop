@@ -1,44 +1,32 @@
 /// GIT 
 
-git init 
-git add archivo
-git commit -m "mensaje para el log"
-git commit -am "mensaje para el log" <!-- esto combina add y commit en una sola operacion -->
-git checkout new_branch <!--to switch to that branch-->
+// Iniciar una sesión en GIT                                                                git init 
+// Agregar cambios al repositorio                                                           git add nombredelbranch
+// Hacer un commit                                                                          git commit -m "mensaje para el log"
+// Combina add y commit en una sola operacion                                               git commit -am "mensaje para el log"
+// Cambiar a la siguiente branch                                                            git checkout new_branch
+// Crear una nueva branch                                                                   git branch new_branch
+// Guarda todos los archivos del proyecto                                                   git add .
+// Merge de una branch en la que estas posicionado                                          git merge nombredelaramaquequieroFusionar
+// Revisar logs de los commits                                                              git log
+// exit git log                                                                             q+RETURN  // q
+// muestra diferencias entre ambos branches
+// Muestra diferencias entre ambos branches                                                 git diff branch1 branch2
+// Lista de branches existentes                                                             git branch
+// Modificar nombre de una branch                                                           git branch -m nombre-antiguo nombre-nuevo
 
-Crear una nueva branch
-git branch new_branch
-
-Guarda todos los archivos del proyecto
-git add .
-
-
-git merge nombredelaramaquequieroFusionar
-
-git log
-
-git diff branch1 branch2 <!--muestra diferencias entre ambos branches-->
-
-Sair del log
-q
-
-Lista de branches existentes
-git branch
-
-Modificar nombre de una branch
-git branch -m nombre-antiguo nombre-nuevo
 
 
 /// HotKeys de VSC
 
-
-cmd K + cmd F /*Toma una seleccion de etiquetas y las acomoda con la identacion correspondiente */
-
-opt z   /* te permite ver una linea de texto larga sin tener que scrollear */
+// Toma una seleccion de etiquetas y las acomoda con la identacion correspondiente          cmd K + cmd F
+// Permite ver una linea de texto larga sin tener que scrollear                             opt z
 
 ctr + tab /* me permite moverme entre distintas paginas como en un navegador */
 
-cmdK + cmdC /* para cambiar una etiqueta y transformarla en comentario*/
+cmd K + cmd C /* para cambiar una etiqueta y transformarla en comentario*/
+
+cmd K+cmd U /* quitar comentario y volver al codigo
 
 Tab         mueve para la derecha la tabulacion del codigo
 Tab+Shift   mueve para la izquierda la tabulacion del codigo
@@ -56,6 +44,14 @@ Express generator, te arma un proyecto de express con sus carpets y dependencias
 luego en la carpeta que vamos a generar el proyecto ponemos express nombre-del-proyecto
 
 NodeMon sirve p
+
+
+instalar
+node
+npm init -y
+npm install express --save
+npm install -D nodemon // la -D significa de Desarrollo Development sino se puede usar "node --watch app.js"
+npm install mysql2
 
 
 
