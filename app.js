@@ -1,12 +1,16 @@
+/* ENTRY POINT */
+
 const express = require('express');
 const app = express();
 
-/* Puerto */
-const PORT = 3001;
+/* Requerimos la dependencia dotenv */
+require('dotenv').config();
+/* Leemos la constante del Port */
+const PORT = process.env.PORT;
 
 /* Import de las rutas */
 const mainRoutes = require('./src/routes/mainRoutes')
-const shopRoutes = require('./src/routes/shopRoutes');
+// const shopRoutes = require('./src/routes/shopRoutes');
 
 /* Define carpeta de archivos estáticos */
 app.use(express.static('public'));
@@ -17,7 +21,7 @@ app.use(express.json());
 
 /* Middleware a las Rutas */
 app.use('/', mainRoutes);
-app.use('/', shopRoutes);
+// app.use('/', shopRoutes);
 
 /* Middleware para manejar el error 404 */
 app.use((req, res, next) => {
