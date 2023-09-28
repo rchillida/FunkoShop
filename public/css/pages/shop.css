@@ -1,0 +1,134 @@
+/* SHOP */
+
+.shop{
+    display: flex;
+    padding-top:var(--spacing-68);
+
+}
+
+.shop__collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr) 50px;
+    justify-content: space-between;
+    padding: var(--spacing-36);
+    /* background-color: #1D84B5; */
+};
+
+/* ASIDE */
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+    margin-right: var(--spacing-8);
+}
+
+
+input[type=text] {
+    border: 2px solid var(--dark-bg-solid);
+    width: 100%;
+    padding: var(--spacing-8) var(--spacing-12);
+    border-radius: 6px;
+    margin: var(--spacing-12), 0;
+}
+
+.filter__title {
+    font-family: var(--base-font);
+    color: var(--dark-solid);
+    font-weight: 500;
+    font-size: var(--font-medium);
+    margin-bottom: var(--spacing-24);
+}
+
+.filter__search-input {
+    border: 2px solid var(--dark-bg-solid);
+    padding: var(--spacing-8) var(--spacing-20);
+    width: 100%;
+    border-radius: 6px;
+    margin-top: var(--spacing-12);
+}
+
+select {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--dark-bg-solid);
+    width: 100%;
+    padding: var(--spacing-8) var(--spacing-12);
+    border-radius: 6px;
+}
+
+.aside__filter-price-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-12);
+}
+
+.filter__price-title {
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: var(--font-small);
+}
+
+
+.filter__price-input::placeholder {
+    text-align: center;
+}
+
+#ordenar {
+    border: 2px solid var(--dark-solid);
+    border-radius: 6px;
+    margin-top: var(--spacing-12);
+}
+ 
+.aside__filter-check {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
+
+.filter__check-title {
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-weight: 400;
+
+}
+
+.filter__content {
+    display: flex;
+    flex-direction: column;
+    gap:var(--spacing-8);
+    padding: var(--spacing-8); 
+    width: auto;
+}
+
+/* Pagination links */
+
+.pagination {
+    text-align: center;
+    margin-bottom: var(--spacing-68);
+}
+
+.pagination a {
+    display:inline-block;
+    color: var(--dark-bg-solid);
+    padding: var(--spacing-16);
+    text-decoration: none;
+    border: 1px solid var(--lightgrey-bg-solid);
+    transition: background-color .3s ease-in-out;
+}
+
+  /* Style the active/current link */
+  .pagination a.active {
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    border: 1px solid var(--primary-solid);
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .pagination a:hover:not(.active) {background-color: var(--lightgrey-bg-solid)}
+
+
+
+  
