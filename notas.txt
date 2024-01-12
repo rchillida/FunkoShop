@@ -34,6 +34,14 @@ git branch
 Modificar nombre de una branch
 git branch -m nombre-antiguo nombre-nuevo
 
+---
+
+TAG // Permite generar versiones en GitHub que luego podemos descargar como .zip
+git tag nombreDeLaVersion m- "mensaje sobre la version"
+
+git push --tag
+
+---
 
 
 
