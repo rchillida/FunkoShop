@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunkoShop create</title>
-    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
     <header>  <!--Inicio de header-->
@@ -23,49 +23,76 @@
         </nav>
     </header> <!--Fin de header-->
     <main class="container">
-        <h1 class="table__title">Crear nuevo item</h1>
+        <h2 class="table__title">Crear nuevo item</h2>
 
         <!--Inicio de Grid container  8 filas-->
+        <form class="create__form" action="../admin/create" method="POST" enctype="application/x-www-form-urlencoded">
+            <div class="form__flex">
+                <div class="form__box--flex">
+                    <label for="category">Categoría</label>
+                    <select name="category" id="category" placeholder="Seleccionar">
+                        <option value="Seleccionar" disabled selected hidden>Seleccionar</option>
+                        <option value="Box">Box</option>
+                        <option value="Remeras">Remeras</option>
+                        <option value="Posters">Posters</option>
+                    </select>
+                </div>
+                <div class="form__box--flex">
+                    <label for="license">Licencia</label>
+                    <select name="license" id="license" placeholder="Seleccionar">
+                        <option value="Seleccionar" disabled selected hidden>Seleccionar</option>
+                        <option value="StarWars">StarWars</option>
+                        <option value="Pokemon">Pokemon</option>
+                        <option value="HarryPotter">Harry Potter</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__flex">
+                <label class="create__product_name" for="product_name">Nombre del producto</label>
+                <input type="text" id="product_name" name="product_name" placeholder="Kakashi Hatake Shippuden Saga">
+            </div>
+            <div class="form__flex">
+                <textarea class="create__textarea" name="product_description" id="product_description" cols="80" rows="8" placeholder="Descripción del producto"></textarea>
+            </div>
+            <div class="form__flex">
+                <div class="form__box--flex">
+                    <label for="sku">SKU</label>
+                    <input type="text" id="sku" name="sku" placeholder="SSK111AB001">
+                </div>
+                <div class="form__box--flex">
+                    <label for="price">Precio</label>
+                    <input type="text" id="price" name="price" placeholder="$ 0.000,00">
+                </div>
+                <div class="form__box--flex">
+                    <label for="stock">Stock</label>
+                    <input type="text" id="stock" name="stock" placeholder="0">
+                </div>
+            </div>
+            <div class="form__flex">
+                <div class="form__box--flex">
+                    <label for="discount">Descuento</label>
+                    <input type="text" id="discount" name="discount" placeholder="0%">
+                </div>
+                <div class="form__box--flex">
+                    <label for="promo">Cuotas</label>
+                    <select name="promo" id="promo" placeholder="3 cuotas sin interés">
+                        <option value="3cuotas" selected>3 cuotas sin interés</option>
+                        <option value="1cuotas">1 pago</option>
+                        <option value="12cuotas">12 cuotas</option>
+                        <option value="18cuotas">18 cuotas</option>
+                    </select>
+                </div>
 
-        <section class="create__content grid-container">
-            <label for="category">Categoría</label>
-            <select name="category" id="category" placeholder="Seleccionar">
-                <option value="Seleccionar" disabled selected hidden>Seleccionar</option>
-                <option value="Box">Box</option>
-                <option value="Remeras">Remeras</option>
-                <option value="Posters">Posters</option>
-            </select>
-            <label for="license">Licencia</label>
-            <select name="license" id="license" placeholder="Seleccionar">
-                <option value="Seleccionar" disabled selected hidden>Seleccionar</option>
-                <option value="StarWars">StarWars</option>
-                <option value="Pokemon">Pokemon</option>
-                <option value="HarryPotter">Harry Potter</option>
-            </select>
-            <label class="create__product_name" for="product_name">Nombre del producto</label>
-            <input type="text" id="product_name" name="product_name" placeholder="Kakashi Hatake Shippuden Saga">
-            <textarea class="create__textarea" name="product_description" id="product_description" cols="80" rows="8" placeholder="Descripción del producto"></textarea>
-            <label for="sku">SKU</label>
-            <input type="text" id="sku" name="sku" placeholder="SSK111AB001">
-            <label for="price">Precio</label>
-            <input type="text" id="price" name="price" placeholder="$ 0.000,00">
-            <label for="stock">Stock</label>
-            <input type="text" id="stock" name="stock" placeholder="0">
-            <label for="discount">Descuento</label>
-            <input type="text" id="discount" name="discount" placeholder="0%">
-            <label for="promo">Cuotas</label>
-            <select name="promo" id="promo" placeholder="3 cuotas sin interés">
-                <option value="3cuotas" selected>3 cuotas sin interés</option>
-                <option value="1cuotas">1 pago</option>
-                <option value="12cuotas">12 cuotas</option>
-                <option value="18cuotas">18 cuotas</option>
-            </select>
-            <label for="file_image">Imágenes</label>
-            <input type="file" id="file_image" name="file_image">
-            <input type="button" value="Agregar producto">
-            <label for="reset"></label>
-            <input type="reset" value="Limpiar">
-        </section>
+            <div class="form__box--flex">
+                <label for="file_image">Imágenes</label>
+                <input type="file" id="file_image" name="file_image">
+            </div>
+            <div class="form__flex">
+                <input type="button" value="Agregar producto">
+                <label for="reset"></label>
+                <input type="reset" value="Limpiar">
+            </div>
+        </form>
 
         <!--Fin de grid container-->
 

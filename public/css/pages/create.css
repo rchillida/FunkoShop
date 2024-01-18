@@ -1,0 +1,10 @@
+.create__content {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    padding: var(--spacing-36);
+}
+
+.create__select {
+    padding: var(--spacing-36);
+}
+

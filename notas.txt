@@ -112,7 +112,7 @@ Tab+Shift   mueve para la izquierda la tabulacion del codigo
 
 cmd+K Clears terminal
 
-ctrl+C Cierra el servidor activo de node
+//////// ctrl+C Cierra el servidor activo de node //////////
 
 Para instalar npm install
 En la terminal para instalar express... npm i express -g // el flag -g significa que se va a instalar en forma global en toda la computadora...  1 solo flag debe aparecer la orden abreviada (-g) si no, tengo que usar 2 --global
