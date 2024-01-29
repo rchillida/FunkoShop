@@ -1,4 +1,51 @@
-.create__form {
+textarea {
+    width: 100%;
+}
+
+textarea::placeholder{
+    padding: var(--spacing-8);
+    color: gainsboro;
+
+}
+
+.form__box--flex {
     display: flex;
-    flex-direction: column;
+    gap: var(--spacing-12);
+    align-items: center;
+ }
+
+.form__flex {
+    display: flex;
+    gap: var(--spacing-36);
+}
+
+.form__flex .form__box{
+    flex: 1 1 100%;
+}
+
+
+.form__input {
+    padding: 1rem 0.5rem;
+    border: none;
+    flex-grow: 1;
+    border-bottom: 2px solid #ff3333;
+    font-size: var(--font-xsmall);
+}
+
+.form__input:focus {
+    outline: 0;
+}
+
+.form__label {
+    font-size: var(--font-medium);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.form__input--wrapper .form__input {
+    width: 50%;
+}
+
+.form__btn {
+    font-size: var(--font-xsmall);
 }

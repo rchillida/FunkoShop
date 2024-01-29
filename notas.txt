@@ -151,3 +151,10 @@ Ramas comunes
 master
 develop
 feature // bugfix // test // (buscar en GIT FLOW las nomenclaturas)
+
+lenght units
+
+px: pixel
+em = desired element pixel value / parent element font-size in pixels
+rem = rem values are relative to the root html element, not the parent element.
+ex = the font-size equals the x-height of the first available font used on the page.

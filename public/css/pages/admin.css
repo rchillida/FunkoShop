@@ -1,0 +1,91 @@
+/* ADMIN PAGE */
+
+.admin__search {
+    display: flex;
+    align-items: center;
+    margin-top: var(--spacing-36);
+}
+
+.admin__searchicon {
+    font-size: var(--font-xlarge);
+    margin-right: var(--spacing-24);
+}
+
+.admin__searchtext {
+    max-height: 44px;
+    max-width: 530px;
+    align-items: left;
+
+}
+
+.admin__tablecontent {
+    margin: var(--spacing-36);
+}
+
+.admin__tableheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-36);
+}
+.table__title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    text-transform: uppercase;
+}
+
+
+.admin__table {
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+tr th td {
+    margin: var(--spacing-28);
+}
+
+.table__add {
+    display: flex;
+    align-items: center;
+    
+}
+
+.admin__addlabel {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 700;
+    padding: var(--spacing-16);
+}
+
+.admin__plus {
+    display: inline-block;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-12);
+    border-radius: 6px;
+}
+
+.table__header {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 700;
+    text-align: left;
+}
+.table__data {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 500;
+    text-align: left;
+    height: 60px;
+}
+
+.table__edit {
+    color: var(--secondary-solid);
+    font-size: var(--font-medium);
+}
+
+.table__delete {
+    color: var(--primary-solid);
+    font-size: var(--font-medium);
+}
