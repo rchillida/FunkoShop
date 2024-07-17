@@ -11,7 +11,7 @@ Iniciar una sesión en GIT
    git add nombredelbranch
    git commit -m "mensaje para el log"
    git commit -am "mensaje para el log" <!-- esto combina add y commit en una sola operacion -->
-   git checkout -b new_branch <!--to switch to that branch-->
+   git checkout -b new_branch <!--to switch to a new branch-->
 
 Crear una nueva branch
    git branch new_branch
