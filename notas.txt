@@ -5,55 +5,56 @@
 
 /// GIT 
 
-// Iniciar una sesión en GIT         git init 
+Iniciar una sesión en GIT        
+   git init 
 
-// git add nombredelbranch
-git commit -m "mensaje para el log"
-git commit -am "mensaje para el log" <!-- esto combina add y commit en una sola operacion -->
-git checkout -b new_branch <!--to switch to that branch-->
+   git add nombredelbranch
+   git commit -m "mensaje para el log"
+   git commit -am "mensaje para el log" <!-- esto combina add y commit en una sola operacion -->
+   git checkout -b new_branch <!--to switch to that branch-->
 
 Crear una nueva branch
-git branch new_branch
+   git branch new_branch
 
 Guarda todos los archivos del proyecto
-git add .
+   git add .
 
+   git merge nombredelaramaquequieroFusionar
 
-git merge nombredelaramaquequieroFusionar
+   git log
 
-git log
+   git diff branch1 branch2 <!--muestra diferencias entre ambos branches-->
+   git diff file1--file2
 
-git diff branch1 branch2 <!--muestra diferencias entre ambos branches-->
 
 Sair del log
-q
+   q
 
 Lista de branches existentes
-git branch
+   git branch
 
 Modificar nombre de una branch
-git branch -m nombre-antiguo nombre-nuevo
+   git branch -m nombre-antiguo nombre-nuevo
 
 ---
 
 TAG // Permite generar versiones en GitHub que luego podemos descargar como .zip
-git tag nombreDeLaVersion m- "mensaje sobre la version"
-
-git push --tag
-
----
+   git tag nombreDeLaVersion m- "mensaje sobre la version"
 
 
-
-----------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
-
+   git push --tag
+   git fetch
+   git merge
+   git pull unifica ambos (fetch y merge)
 
 
-/// HotKeys de VSC
+Muestra el git log mejor
+   alias graph='git log --all --decorate --oneline --graph'
 
+vemos el fetch y el push de github repositorys
+   git remote -v 
+
+   git branch --merged
 
 
 start a working area (see also: git help tutorial)
@@ -95,6 +96,15 @@ to read about a specific subcommand or concept.
 See 'git help git' for an overview of the system.
 
 
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+
+/// HotKeys de VSC
+
 
 
 cmd K + cmd F /*Toma una seleccion de etiquetas y las acomoda con la identacion correspondiente */
@@ -112,7 +122,7 @@ Tab+Shift   mueve para la izquierda la tabulacion del codigo
 
 cmd+K Clears terminal
 
-ctrl+C Cierra el servidor activo de node
+//////// ctrl+C Cierra el servidor activo de node //////////
 
 Para instalar npm install
 En la terminal para instalar express... npm i express -g // el flag -g significa que se va a instalar en forma global en toda la computadora...  1 solo flag debe aparecer la orden abreviada (-g) si no, tengo que usar 2 --global
@@ -143,11 +153,16 @@ Service Capa que se ocupa de contener la logica del negocio.. formatea los datos
 
 
 
-
-
-
-
 Ramas comunes
 master
 develop
 feature // bugfix // test // (buscar en GIT FLOW las nomenclaturas)
+
+lenght units
+
+px: pixel
+em = desired element pixel value / parent element font-size in pixels
+rem = rem values are relative to the root html element, not the parent element.
+ex = the font-size equals the x-height of the first available font used on the page.
+
+
