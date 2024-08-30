@@ -17,7 +17,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    backdrop-filter: blur(2px) brightness(.9);
+    backdrop-filter: blur(10px) brightness(.9);
 }
 
 .hero__content {

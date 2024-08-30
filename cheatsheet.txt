@@ -137,9 +137,10 @@ NodeMon sirve p
 
 instalar
 nodejs
-npm
-express
-nodemon
+
+npm init -y
+npm instll express
+npm install nodemon -D
 npm i dotenv //para guardar la info confidencial
 npm install mysql2
 
