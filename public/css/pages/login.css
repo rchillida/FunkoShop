@@ -1,0 +1,49 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-12);
+    margin: 5vh;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-8);
+
+}
+
+.login__title {
+    font-size: var(--font-xlarge);
+}
+
+.login__label {
+    width: 160px;
+    margin-left: 10%;
+    font-weight: 400;
+}
+
+#email.form__input, #pass.form__input {
+    width: 180px;
+    margin-left: 10px;
+}
+
+#email::placeholder, #pass::placeholder {
+    color: lightgray;
+    font-size: 1em;
+}
+
+#submit {
+    margin-right: 10%;
+}
+
+#remember {
+    padding: 100px;
+    margin: 5px;
+}
+
+.forgot {
+    color: var(--secondary-solid);
+    font-size: var(--font-xxsmall);
+}
